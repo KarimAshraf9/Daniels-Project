@@ -1,0 +1,53 @@
+@media screen and (max-width: 1199px) {
+  .homeSectionContent h1 {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .testimonialSectionContent .carousel-inner {
+    width: 100%;
+  }
+  .aboutSection figure {
+    margin-bottom: 80px;
+  }
+  .nav-bar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-bar ul a {
+    margin-bottom: 25px;
+  }
+  .nav-bar nav .collapse {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .homeSectionContent h1 {
+    font-size: 30px;
+  }
+
+  .testimonialSectionContent .carousel-inner {
+    width: 96%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .testimonialSectionContent .carousel-inner {
+    width: 100%;
+  }
+
+  .modal div button.close {
+    top: 0;
+    right: 0;
+  }
+  .modal p {
+    top: 95%;
+    right: 0;
+    color: black;
+  }
+}

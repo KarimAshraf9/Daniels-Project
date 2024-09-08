@@ -1,0 +1,965 @@
+/* START GENERAL STYLES */
+
+@font-face {
+  src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+  font-family: Montserrat;
+}
+
+@font-face {
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+  font-family: Poppins-Regular;
+}
+
+@font-face {
+  src: url("../fonts/Poppins/Poppins-Bold.ttf");
+  font-family: Poppins-Bold;
+}
+
+:root {
+  --text-bg-main: rgb(52, 52, 52);
+  --text-bg-sec: rgb(116, 129, 130);
+  --bg-main: rgb(247, 247, 247);
+}
+
+body {
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+  font-family: Poppins-Regular;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat;
+}
+
+header h3::after {
+  content: "";
+  background-image: url("../images/dots.png");
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 100%;
+  height: 50%;
+  z-index: -1;
+}
+
+header h3 {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+/* END GENERAL STYLES */
+
+/* START HOME SECTION */
+
+.nav-bar .navbar {
+  box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.05);
+}
+
+.nav-bar nav a.navbar-brand {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 26px;
+  letter-spacing: 1px;
+  color: rgb(28, 28, 28);
+}
+
+.nav-bar nav .nav-item {
+  margin: 0 20px;
+}
+
+.nav-bar nav .nav-link {
+  color: rgb(17, 17, 17);
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0px;
+}
+
+.nav-bar nav .nav-tabs {
+  border: none;
+}
+
+.nav-bar nav .nav-link.active {
+  position: relative;
+}
+
+.nav-bar nav .nav-link.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(34, 34, 34);
+  top: 100%;
+  left: 0;
+  transform-origin: bottom left;
+  animation: slide 2s ease;
+}
+
+@keyframes slide {
+  0% {
+    transform: scale(0);
+  }
+
+  10% {
+    transform: scale(1);
+  }
+}
+
+.nav-bar button.navbar-toggler {
+  border: none;
+}
+
+.homeSection {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/bg.jpg");
+  background-size: cover;
+}
+
+.homeSectionContent h5 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 55px;
+}
+
+.homeSectionContent h1 {
+  margin: 10px 0 30px;
+  font-size: 60px;
+  font-weight: 200;
+}
+
+.homeSectionContent h1::after {
+  content: "";
+  animation: typing 20s infinite alternate;
+  font-weight: 400;
+}
+
+.homeSectionContent i {
+  width: 35px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.homeSectionContent a {
+  text-decoration: none;
+  color: white;
+}
+
+@keyframes typing {
+  0% {
+    content: "Larry Daniels|";
+  }
+  10% {
+    content: "Larry Daniels|";
+  }
+
+  15% {
+    content: "Larry Daniel|";
+  }
+  16% {
+    content: "Larry Danie|";
+  }
+  17% {
+    content: "Larry Dani|";
+  }
+  18% {
+    content: "Larry Dan|";
+  }
+  19% {
+    content: "Larry Da|";
+  }
+  20% {
+    content: "Larry D|";
+  }
+  21% {
+    content: "Larry |";
+  }
+  22% {
+    content: "Larry|";
+  }
+  23% {
+    content: "Larr|";
+  }
+  24% {
+    content: "Lar|";
+  }
+  25% {
+    content: "La|";
+  }
+  26% {
+    content: "L|";
+  }
+  27% {
+    content: "|";
+  }
+  28% {
+    content: "D|";
+  }
+  29% {
+    content: "De|";
+  }
+  30% {
+    content: "Dev|";
+  }
+  31% {
+    content: "Deve|";
+  }
+  32% {
+    content: "Devel|";
+  }
+  33% {
+    content: "Develo|";
+  }
+  34% {
+    content: "Develop|";
+  }
+  35% {
+    content: "Develope|";
+  }
+  36% {
+    content: "Developer|";
+  }
+  46% {
+    content: "Developer|";
+  }
+  51% {
+    content: "Develope|";
+  }
+  52% {
+    content: "Develop|";
+  }
+  53% {
+    content: "Develo|";
+  }
+  54% {
+    content: "Devel|";
+  }
+  55% {
+    content: "Deve|";
+  }
+  56% {
+    content: "Dev|";
+  }
+  57% {
+    content: "De|";
+  }
+  58% {
+    content: "D|";
+  }
+  59% {
+    content: "|";
+  }
+  60% {
+    content: "D|";
+  }
+  61% {
+    content: "De|";
+  }
+  62% {
+    content: "Des|";
+  }
+  63% {
+    content: "Desi|";
+  }
+  64% {
+    content: "Desig|";
+  }
+  65% {
+    content: "Design|";
+  }
+  66% {
+    content: "Designe|";
+  }
+  67% {
+    content: "Designer|";
+  }
+  70% {
+    content: "Designer|";
+  }
+  72% {
+    content: "Designe|";
+  }
+  73% {
+    content: "Design|";
+  }
+  74% {
+    content: "Desig|";
+  }
+  75% {
+    content: "Desi|";
+  }
+  76% {
+    content: "Des|";
+  }
+  77% {
+    content: "De|";
+  }
+  78% {
+    content: "D|";
+  }
+  79% {
+    content: "|";
+  }
+  80% {
+    content: "L|";
+  }
+  81% {
+    content: "La|";
+  }
+  82% {
+    content: "Lar|";
+  }
+  83% {
+    content: "Larr|";
+  }
+  84% {
+    content: "Larry|";
+  }
+  85% {
+    content: "Larry |";
+  }
+  86% {
+    content: "Larry D|";
+  }
+  87% {
+    content: "Larry Da|";
+  }
+  88% {
+    content: "Larry Dan|";
+  }
+  89% {
+    content: "Larry Dani|";
+  }
+  90% {
+    content: "Larry Danie|";
+  }
+  95% {
+    content: "Larry Daniel|";
+  }
+  100% {
+    content: "Larry Daniels|";
+  }
+}
+
+/* END HOME SECTION */
+
+/* START ABOUT SECTION */
+
+.aboutSection {
+  padding: 100px 0 70px;
+}
+
+.aboutSection figure::after {
+  content: "";
+  background-image: url("../images/dots.png");
+  position: absolute;
+  bottom: -30px;
+
+  left: -30px;
+  width: 80%;
+  height: 80%;
+  z-index: -1;
+}
+
+.aboutSection h3 {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--text-bg-main);
+  line-height: 33px;
+  margin-bottom: 5px;
+}
+
+.aboutSection span.desc {
+  font-size: 14px;
+  color: rgb(153, 153, 153);
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+
+.aboutSection p {
+  font-size: 15px;
+  color: var(--text-bg-sec);
+  line-height: 24px;
+  margin: 20px 0 30px;
+}
+
+.aboutSection .progress {
+  height: 25px;
+  margin-bottom: 30px;
+  background-color: var(--bg-main);
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+
+.aboutSection .progress-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: var(--text-bg-main);
+  border-radius: 6px;
+}
+
+.aboutSectionSkills h6 {
+  font-size: 13px;
+  line-height: 14.3px;
+}
+
+.aboutSectionSkills span {
+  font-size: 11px;
+}
+
+.aboutSectionSkillsButtons {
+  margin-top: 40px;
+}
+
+.aboutSectionSkillsButtons button {
+  font-size: 13px;
+  line-height: 18.5px;
+  padding: 10px 30px;
+  transition: all 0.5s ease;
+}
+
+.aboutSectionSkillsButtons .btn1 {
+  background-color: var(--text-bg-main);
+  border-color: var(--text-bg-main);
+  border-radius: 5px;
+}
+
+.aboutSectionSkillsButtons .btn1:hover {
+  background-color: white;
+  color: var(--text-bg-main);
+}
+
+.aboutSectionSkillsButtons .btn2 {
+  background-color: white;
+  color: var(--text-bg-main);
+  border-color: var(--text-bg-main);
+  border-radius: 5px;
+}
+
+.aboutSectionSkillsButtons .btn2:hover {
+  background-color: var(--text-bg-main);
+  color: white;
+}
+
+/* END ABOUT SECTION */
+
+/* START SERVICES SECTION */
+
+.servicesSection {
+  background-color: var(--bg-main);
+  padding: 100px 0 70px;
+}
+
+.servicesSection h3 {
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--text-bg-main);
+  line-height: 44px;
+  margin-bottom: 80px;
+}
+
+.servicesCard {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px -8px;
+  padding: 50px 20px;
+}
+
+.servicesCard:hover {
+  i {
+    background-color: var(--bg-icon-hov);
+    color: var(--text-icon-hov);
+  }
+}
+
+.servicesSectionContent h6 {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text-bg-main);
+  line-height: 19.8px;
+  margin: 20px 0 15px;
+}
+
+.servicesSectionContent p {
+  --bs-body-font-size: 14px;
+  font-size: var(--bs-body-font-size);
+  color: var(--text-bg-sec);
+  line-height: 22.4px;
+  word-spacing: 2px;
+}
+
+.servicesSectionContent i {
+  --bg-icon: rgb(244, 244, 244);
+  --bg-icon-hov: rgb(28, 28, 28);
+  --text-icon-hov: rgb(238, 238, 238);
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+  color: var(--text-bg-main);
+  background-color: var(--bg-icon);
+  transition: all 0.5s ease;
+}
+
+/* END SERVICES SECTION */
+
+/* START PORTOFLIO SECTION */
+
+.portfolioSection {
+  padding: 100px 0 70px;
+}
+
+.portfolioSection h3 {
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--text-bg-main);
+  line-height: 44px;
+  margin-bottom: 80px;
+}
+
+.portfolioSectionContent ul.nav-tabs {
+  --bs-border-width: 0px;
+  border-width: var(--bs-border-width);
+  margin-bottom: 50px;
+}
+
+.portfolioSectionContent .nav-link {
+  font-weight: 700;
+  color: rgb(34, 34, 34);
+  line-height: 23px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.portfolioSectionContent .nav-link.active {
+  position: relative;
+}
+
+.portfolioSectionContent .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(17, 17, 17);
+  height: 2px;
+  transform-origin: bottom left;
+  animation: moveSlider 0.4s ease;
+}
+
+@keyframes moveSlider {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.modal {
+  position: relative;
+}
+.modal i.next {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  color: var(--bg-main);
+  transform: translateY(-50%);
+  font-size: 50px;
+  cursor: pointer;
+}
+.modal i.prev {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  color: var(--bg-main);
+  transform: translateY(-50%);
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.modal p {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  color: var(--bg-main);
+  font-size: 12px;
+}
+
+.modal div button.close {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  color: var(--bg-main);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.portfolioSectionContent h6 {
+  font-size: 12px;
+  color: var(--text-bg-main);
+  line-height: 13.2px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  transform: translateY(-30px);
+  transition: all 0.5s ease;
+}
+
+.portfolioSectionContent figcaption ul {
+  transform: translateY(15px);
+  transition: all 0.5s ease;
+}
+
+.portfolioSectionContent figcaption {
+  top: 5px;
+  left: 5px;
+  bottom: 5px;
+  right: 5px;
+  background-color: rgba(255, 255, 255, 0.95);
+  transform: translateY(15px);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.portfolioSectionContent figure:hover {
+  figcaption {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  h6 {
+    transform: translateY(0);
+  }
+
+  ul {
+    transform: translateY(0);
+  }
+}
+
+.portfolioSectionContent i {
+  --text-icon: rgb(238, 238, 238);
+  --text-icon-hov: rgb(0, 0, 0);
+  --bg-icon: rgb(17, 17, 17);
+  --bg-icon-hov: transparent;
+
+  width: 30px;
+  height: 30px;
+  color: var(--text-icon);
+  background-color: var(--bg-icon);
+  border: 1px solid;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.portfolioSectionContent a {
+  color: white;
+}
+
+.portfolioSectionContent a:hover {
+  i {
+    color: var(--text-icon-hov);
+    background-color: var(--bg-icon-hov);
+    border-color: var(--bg-icon);
+  }
+}
+
+/* END PORTOFLIO SECTION */
+
+/* START TESTIMONIAL SECTION */
+
+.testimonialSection {
+  background-color: var(--bg-main);
+  padding: 100px 0 100px;
+}
+
+.testimonialSection h3 {
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--text-bg-main);
+  line-height: 44px;
+  margin-bottom: 80px;
+}
+
+.testimonialSectionContent img {
+  width: 90px;
+  height: 90px;
+}
+
+.testimonialSectionContent p {
+  color: var(--text-bg-sec);
+  font-size: 15px;
+  line-height: 24px;
+  word-spacing: 2px;
+}
+
+.testimonialSectionContent h6 {
+  line-height: 17.6px;
+  color: var(--text-bg-main);
+  margin: 30px 0 5px;
+}
+
+.testimonialSectionContent span {
+  color: rgb(136, 136, 136);
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.testimonialSectionContent .carousel-indicators {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.testimonialSectionContent .carousel-inner {
+  width: 85%;
+}
+
+.testimonialSectionContent .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 7px;
+  background-color: rgb(214, 214, 214);
+  opacity: 1;
+}
+
+.testimonialSectionContent .carousel-indicators button:hover {
+  background-color: rgb(134, 151, 145);
+}
+
+.testimonialSectionContent .carousel-indicators .active {
+  background-color: rgb(134, 151, 145);
+}
+
+/* END TESTIMONIAL SECTION */
+
+/* START statistics SECTION */
+
+.statisticsSection {
+  padding: 100px 0 70px;
+}
+
+.statisticsSection i {
+  font-size: 30px;
+}
+
+.statisticsSection h3 {
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--text-bg-main);
+  line-height: 33px;
+  margin-bottom: 15px;
+}
+
+.statisticsSection p {
+  color: var(--text-bg-sec);
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+/* END statistics SECTION */
+
+/* START TEAM SECTION */
+
+.teamSection {
+  background-color: var(--bg-main);
+  padding: 100px 0;
+}
+
+.teamSection h3 {
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--text-bg-main);
+  line-height: 44px;
+  margin-bottom: 80px;
+}
+
+.teamSectionContent figure:hover {
+  img {
+    transform: scale(1.2);
+  }
+}
+
+.teamSectionContent .teamSectionContentCard:hover {
+  figcaption {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+.teamSectionContent img {
+  transition: all 0.4s ease;
+}
+
+.teamSectionContent .figdesc {
+  background-color: rgba(52, 52, 52, 0.8);
+  padding: 25px;
+}
+
+.teamSectionContent figcaption {
+  top: 5px;
+  bottom: 5px;
+  right: 5px;
+  left: 5px;
+  background-color: rgba(255, 255, 255, 0.95);
+  transform: rotateY(180deg);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.teamSectionContent h4 {
+  font-size: 25px;
+  line-height: 27.5px;
+  margin-bottom: 5px;
+}
+
+.teamSectionContent h5 {
+  line-height: 22px;
+}
+
+.teamSectionContent a {
+  color: white;
+}
+
+.teamSectionContent li {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.teamSectionContent li:hover {
+  background-color: white;
+  a {
+    color: black;
+  }
+}
+
+/* END TEAM SECTION */
+
+/* START CONTACT SECTION */
+
+.contactSection {
+  padding: 100px 0 100px;
+}
+
+.contactSection h3 {
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--text-bg-main);
+  line-height: 44px;
+  margin-bottom: 80px;
+}
+
+.contactSection h6 {
+  color: var(--text-bg-main);
+  line-height: 17.6px;
+  margin: 15px 0 10px;
+}
+
+.contactSection p {
+  font-size: 15px;
+  color: var(--text-bg-sec);
+}
+
+.contactSection i {
+  --bg-icon: rgb(244, 244, 244);
+  --bg-icon-hov: rgb(28, 28, 28);
+  --text-icon-hov: rgb(238, 238, 238);
+  width: 60px;
+  height: 60px;
+  font-size: 25px;
+  color: var(--text-bg-main);
+  background-color: var(--bg-icon);
+  transition: all 0.5s ease;
+}
+
+.contactSection i:hover {
+  color: var(--text-icon-hov);
+  background-color: var(--bg-icon-hov);
+}
+
+.contactSectionDetail {
+  margin-bottom: 70px;
+}
+
+.contactSectionForm input {
+  background-color: var(--bg-main);
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.contactSectionForm textarea {
+  background-color: var(--bg-main);
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.contactSectionForm .form-control {
+  border: none;
+  box-shadow: none;
+  background-color: var(--bg-main);
+}
+
+.contactSectionForm button {
+  font-size: 13px;
+  line-height: 18.5px;
+  padding: 10px 40px;
+  transition: all 0.5s ease;
+}
+
+.contactSectionForm .btn1 {
+  background-color: var(--text-bg-main);
+  border-color: var(--text-bg-main);
+  border-radius: 5px;
+}
+
+.contactSectionForm .btn1:hover {
+  background-color: white;
+  color: var(--text-bg-main);
+}
+
+/* END CONTACT SECTION */
+
+/* START FOOTER SECTION */
+
+.footerSection {
+  padding: 30px 0;
+  background-color: rgb(28, 28, 28);
+  line-height: 24px;
+}
+
+.footerSection p {
+  font-size: 13px;
+  color: var(--text-bg-sec);
+  line-height: 20.8px;
+}
+
+/* END FOOTER SECTION */
